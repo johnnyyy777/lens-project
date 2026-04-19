@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sony 相機展示中心</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #fff;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #fff; }
+
+    .hero {
+      padding: 100px 40px 80px;
+      max-width: 900px;
+    }
+
+    .hero-eyebrow {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span { color: #e0a040; }
+
+    .hero p {
+      font-size: 16px;
+      color: #888;
+      line-height: 1.7;
+      max-width: 520px;
+      margin-bottom: 48px;
+    }
+
+    .btn-group { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 32px;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #e0a040;
+      color: #000;
+      font-weight: 600;
+    }
+    .btn-primary:hover { background: #f0b050; }
+
+    .btn-secondary {
+      border: 1px solid #444;
+      color: #ccc;
+    }
+    .btn-secondary:hover { border-color: #888; color: #fff; }
+
+    .products {
+      padding: 40px 40px 80px;
+    }
+
+    .products h2 {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .product-link {
+      display: block;
+      text-decoration: none;
+      padding: 24px;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .product-link:hover {
+      border-color: #444;
+      background: #161616;
+      transform: translateY(-2px);
+    }
+
+    .product-model {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #555;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .product-name {
+      font-size: 15px;
+      color: #ddd;
+      font-weight: 400;
+    }
+
+    .product-arrow {
+      margin-top: 16px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SONY</div>
+    <nav>
+      <a href="/">首頁</a>
+      <a href="https://store.sony.com.tw/product/ILCE-6700">Alpha 6700</a>
+      <a href="https://store.sony.com.tw/">管理後台</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-eyebrow">Sony 相機展示中心</div>
+    <h1>感受<span>真實</span><br>捕捉瞬間</h1>
+    <p>探索 Sony 最新相機系列。從入門 Vlog 機到全片幅旗艦，每一台都為你的創作而生。</p>
+    <div class="btn-group">
+      <a href="https://store.sony.com.tw/product/ILCE-6700" class="btn btn-primary">查看 Alpha 6700</a>
+      <a href="https://store.sony.com.tw/" class="btn btn-secondary">管理後台</a>
+    </div>
+  </div>
+
+  <div class="products">
+    <h2>全部機型</h2>
+    <div class="product-grid">
+      <a href="https://store.sony.com.tw/product/ILCE-6700" class="product-link">
+        <div class="product-model">APS-C</div>
+        <div class="product-name">Alpha 6700</div>
+        <div class="product-arrow">→</div>
+      </a>
+      <a href="https://store.sony.com.tw/product/show/ff8080817c9632be017ca687b78610b4" class="product-link">
+        <div class="product-model">Full Frame</div>
+        <div class="product-name">Alpha 7 IV</div>
+        <div class="product-arrow">→</div>
+      </a>
+      <a href="https://store.sony.com.tw/product/show/ff8080818a0213c7018a40a82fda37e3" class="product-link">
+        <div class="product-model">Full Frame</div>
+        <div class="product-name">Alpha 7C II</div>
+        <div class="product-arrow">→</div>
+      </a>
+      <a href="https://store.sony.com.tw/product/show/ff808081904d2b990190954bf130698e" class="product-link">
+        <div class="product-model">Vlog</div>
+        <div class="product-name">ZV-E10 II</div>
+        <div class="product-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Sony 相機展示中心</span>
+    <span>Express.js 期中專題</span>
+  </footer>
+
+</body>
+</html>
